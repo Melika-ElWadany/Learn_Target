@@ -12,6 +12,8 @@ _default_clients["IOS_EMBED"]["context"]["client"]["clientVersion"] = "19.08.35"
 _default_clients["IOS_MUSIC"]["context"]["client"]["clientVersion"] = "6.41"
 _default_clients["ANDROID_MUSIC"] = _default_clients["ANDROID_CREATOR"]
 
+transcription_result_file = "transcription_result.txt"
+
 # download the youtube videos
 def download_audio(youtube_url, output_filename="audio.mp3"):
     yt = YouTube(youtube_url)
@@ -46,8 +48,9 @@ def transcription_w_timestamps(path):
             response_format="verbose_json"
         )
 
-    for segment in response['segments']:
-        print(f"[{format_timestamp(segment['start'])} - {format_timestamp(segment['end'])}] {segment['text']}")
+    with open(transcription_result_file, "w") as output_file:
+        for segment in response['segments']:
+            output_file.write((f"[{format_timestamp(segment['start'])} - {format_timestamp(segment['end'])}] {segment['text']} \n"))
 
 # download_audio(youtube_url="https://youtu.be/jejgP_u82Qo?si=aKWIgg_d1JB2ocIT")
-print(transcription_w_timestamps("practice.mp3"))
+transcription_w_timestamps("practice.mp3")
