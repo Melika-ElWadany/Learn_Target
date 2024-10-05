@@ -3,6 +3,7 @@ from pytube import YouTube, request
 from pydub import AudioSegment
 from pytube.innertube import _default_clients
 import os
+import openai_secrets
 
 _default_clients["ANDROID"]["context"]["client"]["clientVersion"] = "19.08.35"
 _default_clients["IOS"]["context"]["client"]["clientVersion"] = "19.08.35"
@@ -28,11 +29,25 @@ def download_audio(youtube_url, output_filename="audio.mp3"):
     os.remove(downloaded_file)  # remove temp video file
     return output_filename
 
-# return transcription of the video
-def transcription(path):
-    with open(path, "rb") as audio:
-        response = openai.Audio.transcribe("whisper-1", audio)
-    return response['text']
+# helper function to make timestamps formatting in minutes/seconds
+def format_timestamp(seconds):
+    minutes = int(seconds // 60)
+    seconds = int(seconds % 60)
+    return f"{minutes:02d}:{seconds:02d}"
+
+# transcribe audio with timestamps
+def transcription_w_timestamps(path):
+    openai.api_key = openai_secrets.SECRET_KEY
+
+    with open(path, "rb") as audio_file:
+        response = openai.Audio.transcribe(
+            model="whisper-1", 
+            file=audio_file, 
+            response_format="verbose_json"
+        )
+
+    for segment in response['segments']:
+        print(f"[{format_timestamp(segment['start'])} - {format_timestamp(segment['end'])}] {segment['text']}")
 
 # download_audio(youtube_url="https://youtu.be/jejgP_u82Qo?si=aKWIgg_d1JB2ocIT")
-print(transcription("practice.mp3"))
+print(transcription_w_timestamps("practice.mp3"))
