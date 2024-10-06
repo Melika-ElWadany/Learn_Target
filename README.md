@@ -19,6 +19,6 @@ Students will submit two inputs: one will be a lecture video or a PDF document, 
 
 ### Next Steps
 Our next steps for this project will be to add new features such as 
-- give additional study materials outside of what was inputed by user.
+- give additional study materials outside of what was inputted by user.
 - allow for more than just one study material input.
 - allow continuous conversation with the user.
