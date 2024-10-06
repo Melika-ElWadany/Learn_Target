@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+}
+
+.navbar{
+    background-color: darkblue;
+    height: 5em;
+}
+.page-content{
+    padding-top: 5em;
+
+}
+form textarea{
+    display: block;
+    padding: 0.5em 0.3em;
+    font-size: 15px;
+    margin: auto;
+    height: 4em;
+
+}
+
+.question-form {
+    width: 100%;
+    max-width: 500px; /* Allows better control of width on larger screens */
+    display: block;
+    margin: 20px auto; /* Adds some vertical margin */
+    padding: 20px; /* Adds inner padding for better spacing */
+    height: auto; /* Allow dynamic height based on content */
+    min-height: 15rem; /* Ensures a minimum height */
+    border-radius: 1.5em; /* Slightly reduced border radius for a modern look */
+    background-color: #f9f9f9; /* Light background color for a softer feel */
+    border: 2px solid #ddd; /* Adds a subtle border for clarity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.question-form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.question-form-fieldset{
+    height: 15rem;
+}
+
+.form-text-input{
+    display: block;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 3em;
+    border-radius: 1em;
+    border-color: grey;
+}
+
+/**/
+.form-file-input {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #444;
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-file-input:hover {
+    border-color: #999;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-file-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.form-file-input::file-selector-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-file-input::file-selector-button:hover {
+    background-color: #0056b3;
+}
+/**/
+.form-submit {
+    display: block;
+    width: 8em;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+.form-submit:active {
+    transform: scale(0.98);
+    background-color: #0056b3;
+}
+
+.form-submit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/**/
+.form-text-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-text-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+.form-text-input:hover {
+    border-color: #999;
+}
+
+.form-text-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/**/
+.navbar {
+
+    padding: 15px 30px;
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.question-form-fieldset {
+    border: 2px solid #ccc;
+    border-radius: 1em;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-form-fieldset:hover {
+    border-color: #999;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.question-form-fieldset legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
