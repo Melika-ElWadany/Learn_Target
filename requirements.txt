@@ -4,6 +4,7 @@ asgiref==3.8.1
 certifi==2024.8.30
 distro==1.9.0
 Django==4.2.16
+gradio == 3.27.0
 pytube==15.0.0
 pydub==0.25.1
 djangorestframework==3.15.2
@@ -20,6 +21,40 @@ sqlparse==0.5.1
 tqdm==4.66.5
 typing_extensions==4.12.2
 whisper==1.0.0
-langchain-openai
-langchain_core
-chromadb
+
+
+chromadb==0.5.11
+pypdf == 4.0.0
+pymupdf == 1.22.2
+tiktoken == 0.8.0
+langchain-unstructured==0.1.5
+
+langchain-openai==0.2.2
+langchain-core==0.3.9
+
+
+PyYAML==6.0.2
+jsonpatch==1.33
+langsmith==0.1.131
+packaging==24.1
+
+tenacity==8.5.0
+typing-extensions==4.12.2
+
+
+
+
+
+
+regex==2024.9.11
+requests==2.32.3
+
+certifi==2024.8.30
+
+jsonpointer==3.0.0
+orjson==3.10.7
+requests-toolbelt==1.0.0
+
+
+charset-normalizer==3.3.2
+urllib3==2.2.3
