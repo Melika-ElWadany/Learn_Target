@@ -1,7 +1,7 @@
 # Learn_Target
-This web application is designed for college students to help them identify key topics from their lectures. The primary aim is to guide students on what to study based on the provided homework questions, rather than solving those questions.
+This web application Learn_Target (LWA) aims to address the gap in the education system that overlooks the unique needs of NeuroDivergent learners. Over 50 million Americans are underserved by traditional methods, and this web application is designed to invest in diverse learning styles. Learn_Target specifically focuses on NeuroDivergent college students, providing them with a tool that simplifies their study process by helping them identify key topics from lectures without feeling overwhelmed by excessive information.
 
-Students will submit two inputs: one will be a lecture video or a PDF document, and the other will be a text file containing their homework questions.
+Students submit a lecture video or PDF document along with their homework questions in a text file. The platform then highlights the most relevant topics for them to study, allowing students to focus on the material that directly relates to their assignments. The goal is to empower students to navigate their coursework more efficiently and confidently, bridging the learning gap and unlocking the potential of diverse minds.
 
 ## Learn_Target
 1. First our tool will allow students to input their homework assignment, which the exam may be based on, and a video lecture or a pdf.
