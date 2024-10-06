@@ -1,0 +1,15 @@
+{% extends 'assistant/base.html' %}
+
+{% block content %}
+<form class="question-form">
+    <fieldset class="question-form-fieldset">
+        <legend>Get Help</legend>
+        <div>
+            <textarea class="form-text-input" type="text" placeholder="Enter the Prompt"></textarea>
+            <input class="form-file-input" type="file">
+            <button class="form-submit">Get Help</button>
+        </div>
+    </fieldset>
+</form>
+
+{% endblock content %}
