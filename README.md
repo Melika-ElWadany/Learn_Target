@@ -5,7 +5,7 @@ Students will submit two inputs: one will be a lecture video or a PDF document, 
 
 ## Learn_Target
 1. First our tool will allow students to input their homework assignment, which the exam may be based on, and a video lecture or a pdf.
-2. Second, the AI powered tool will then return topics and information related to the questions which the students can study on.
+2. Second, the AI powered tool will then return the "relevant" topics among the uploaded data. The student then wouldn't need to explore the rest of the data since it does not "directly" relate to the problem at hand. Narrowing down the search.
 
 ### Tech Stack
 - HTML
