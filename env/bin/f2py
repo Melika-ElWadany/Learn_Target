@@ -1,4 +1,4 @@
-#!/Users/USER_ADMIN/Desktop/LearningWithDir/Learn_Target/env/bin/python3
+#!/Users/USER_ADMIN/Desktop/LearningWithDir/Learn_Target/env/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys

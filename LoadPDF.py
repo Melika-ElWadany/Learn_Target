@@ -1,5 +1,4 @@
 from openai_secrets1 import SECRET_KEY
-
 import openai
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
@@ -30,7 +29,7 @@ qa_chain = RetrievalQA.from_chain_type(
     chain_type="stuff",
     retriever=vector_store.as_retriever(search_kwargs={"k": 1})
 )
-
+# Json bidy structure with post request route.
 # load pdf into the vector store then it will added ti the chain.
 
 question = "What are the main topics in this transcription, and the timestamps?"
