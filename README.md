@@ -1,4 +1,10 @@
 # Learn_Target
+This web application is designed for college students to help them identify key topics from their lectures. Its primary aim is to guide students on what to study based on the provided homework questions, rather than solving those questions.
+
+Students will submit two inputs: one will be a lecture video or a PDF document, and the other will be a text file containing their homework questions.
+
+
+
 This is a web application tool targeting College Students to help them encapsulate important topics in their lectures. The goal is for the students to know exactly what they should study from their lecture based on the questions provided. The goal is not to solve the questions! 
 
 The students give two inputs. One input will be a lecture video or a pdf. The other input is the homework questions as text.
